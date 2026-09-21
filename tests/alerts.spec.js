@@ -10,7 +10,7 @@ test.describe('Alerts & Popups', () => {
       dialog.accept();
     });
 
-    
+
     expect(message).toBe('I am an alert box!');
   });
 
@@ -46,3 +46,10 @@ test.describe('Alerts & Popups', () => {
     await expect(alerts.resultText).toHaveText('User cancelled the prompt.');
   });
 });
+
+
+
+
+
+
+//Added new line of comment here.
