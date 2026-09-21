@@ -1,13 +1,13 @@
 export class AlertsSection {
   constructor(page) {
     this.page = page;
-    this.alertBtn = page.locator('#alertBtn');
+    this.alertBtns = page.locator('#alertBtn');
     this.confirmBtn = page.locator('#confirmBtn');
     this.promptBtn = page.locator('#promptBtn');
     this.resultText = page.locator('#demo');
   }
 
-  
+
   async triggerSimpleAlert(onDialog) {
     this.page.once('dialog', onDialog);
     await this.alertBtn.click();
