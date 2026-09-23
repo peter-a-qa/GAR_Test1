@@ -1,10 +1,10 @@
 export class DatePickerSection {
   constructor(page) {
     this.page = page;
-    this.datepickerInputs = page.locator('#datepicker');
+    this.datepickerInputs = page.locator('#datepickers');
     this.txtDateInput = page.locator('#txtDate');
     this.startDateInput = page.locator('#start-date');
-    this.endDateInput = page.locator('#end-date');
+    this.endDateInput = page.locator('#end-dates');
     this.submitRangeButton = page.locator('button.submit-btn');
     this.rangeResult = page.locator('#result');
   }
@@ -26,3 +26,5 @@ export class DatePickerSection {
     await this.submitRangeButton.click();
   }
 }
+
+
