@@ -7,7 +7,7 @@ export class AlertsSection {
     this.resultText = page.locator('#demo');
   }
 
-  
+
   async triggerSimpleAlert(onDialog) {
     this.page.once('dialog', onDialog);
     await this.alertBtn.click();
