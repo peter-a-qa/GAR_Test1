@@ -5,7 +5,7 @@ export class DragAndDropSection {
     this.droppable = page.locator('#droppable');
   }
 
-  async dragToTargets() {
+  async dragToTarget() {
     await this.draggable.dragTo(this.droppable);
   }
 }

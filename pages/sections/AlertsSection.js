@@ -1,7 +1,7 @@
 export class AlertsSection {
   constructor(page) {
     this.page = page;
-    this.alertBtns = page.locator('#alertBtn');
+    this.alertBtn = page.locator('#alertBtn');
     this.confirmBtn = page.locator('#confirmBtn');
     this.promptBtn = page.locator('#promptBtn');
     this.resultText = page.locator('#demo');
