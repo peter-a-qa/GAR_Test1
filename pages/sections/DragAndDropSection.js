@@ -9,3 +9,4 @@ export class DragAndDropSection {
     await this.draggable.dragTo(this.droppable);
   }
 }
+
