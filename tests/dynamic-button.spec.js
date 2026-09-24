@@ -6,9 +6,9 @@ test('toggles the dynamic button label between START and STOP', async ({ homePag
   await expect(dynamicButton.button).toHaveText('START');
 
   await dynamicButton.toggle();
-  await expect(dynamicButton.button).toHaveText('STOPs');
+  await expect(dynamicButton.button).toHaveText('STOP');
 
   await dynamicButton.toggle();
-  await expect(dynamicButton.button).toHaveText('STARTs');
+  await expect(dynamicButton.button).toHaveText('START');
 });
 
